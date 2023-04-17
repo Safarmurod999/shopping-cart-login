@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-function Login({ user, setUser }) {
+function Login({ user, setUser,setMember }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -17,8 +17,10 @@ function Login({ user, setUser }) {
   };
   const checkUserFromLocalStorage = (e) => {
     e.preventDefault();
-    if (email == user.email && password == user.password)
-      return navigate("/cartcontainer");
+    if (email == user.email && password == user.password){
+      setMember(true);
+      return navigate("/cartcontainer"); 
+    }
   };
   return (
     <>

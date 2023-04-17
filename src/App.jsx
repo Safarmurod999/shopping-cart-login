@@ -10,14 +10,15 @@ function App() {
   const [user, setUser] = useState(
     JSON.parse(localStorage.getItem("user")) || null
   );
+  const [member,setMember]=useState(false);
   return (
     <BrowserRouter>
-      <Navbar user={user} />
+      <Navbar user={user} member={member} setMember={setMember}/>
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route
           path="/login"
-          element={<Login user={user} setUser={setUser} />}
+          element={<Login user={user} setUser={setUser} setMember={setMember}/>}
         />
         <Route
           path="/cartcontainer"
