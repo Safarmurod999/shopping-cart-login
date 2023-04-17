@@ -1,0 +1,20 @@
+.blue-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 12px 32px;
+    background-color: #11b7f8;
+    border: 1px solid #11b7f8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    transition: 0.3s;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover {
+      background-color: #ffffff;
+      color: #11b7f8;
+    }
+  }

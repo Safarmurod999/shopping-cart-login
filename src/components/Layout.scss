@@ -1,0 +1,40 @@
+.home {
+    padding-top: 84px;
+    padding-bottom: 76px;
+    background-color: #1e1e1e;
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+    &__left {
+      padding-top: 40px;
+      color: #fff;
+      font-style: normal;
+      h1 {
+        max-width: 492px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 66px;
+        margin-bottom: 40px;
+      }
+      p {
+        max-width: 456px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 38px;
+      }
+    }
+    &__right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+  }

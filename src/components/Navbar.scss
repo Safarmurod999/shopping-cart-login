@@ -1,0 +1,31 @@
+.navbar {
+  padding: 0;
+  background-color: #11b7f8;
+  color: #fff;
+  .navbar .container {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-title {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  &-cart {
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 0;
+    sup {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      font-size: 10px !important;
+      line-height: 10px;
+      padding: 2px 5px !important;
+      border-radius: 50%;
+      background-color: #ff0000;
+    }
+  }
+}
